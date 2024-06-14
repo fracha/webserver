@@ -6,3 +6,6 @@ format: $(ts_files)
 	npx eslint $(ts_files)
 	npx prettier $(ts_files) --write
 	npx tsc
+
+run:
+	node tcp/echo_server.js
